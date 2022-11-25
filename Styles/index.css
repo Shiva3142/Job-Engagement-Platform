@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration: none;
+    color: white;
+    font-family: 'Nerko One', cursive;
+
+}
+
+body{
+    background-color: aqua;
+    background: url("https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80") no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+@media screen and (max-width: 768px) {
+    body{
+        background: url("https://images.pexels.com/photos/3746957/pexels-photo-3746957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")no-repeat fixed;
+    }
+}
+
+a,button,span,img{
+    cursor: pointer;
+}
