@@ -1,0 +1,175 @@
+.adminDashboard  {
+}
+
+
+
+.adminDashboard article {
+	background: url("https://images.unsplash.com/photo-1493219686142-5a8641badc78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+	min-height: 60vh;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.adminDashboard article h1 {
+	color: blue;
+    text-align: center;
+	font-size: 3em;
+}
+.adminDashboard article button {
+	background-color: coral;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+	.adminDashboard article {
+		min-height: 40vh;
+        font-size: 0.5em;
+	}
+}
+
+.adminDashboard #jobFormContainer{
+    display: none;
+}
+.adminDashboard input[type=radio]{
+    display: none;
+}
+
+.adminDashboard form{
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+    
+    margin: 20px;
+    /* background-color: red; */
+    padding: 20px;
+    color: black;
+}
+ @media screen and (max-width: 768px) {
+    .adminDashboard form{
+        max-width: 320px;
+        min-width: 250px;
+    }
+}
+
+.adminDashboard form input{
+    margin: 20px 0;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+}
+
+.adminDashboard form input:focus{
+    border: 2px solid gray;
+}
+
+.adminDashboard form div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.adminDashboard label{
+    width: 120px;
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.adminDashboard input:checked +label{
+    background-color: aqua;
+}
+
+.adminDashboard .jobFormContainer{
+    background-color: white;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap-reverse;
+}
+
+
+.adminDashboard .jobFormContainer div h1{
+    color: blue;
+    max-width: 300px;
+    text-align: center;
+}
+.adminDashboard .jobFormContainer aside{
+    background: url("https://cdn.pixabay.com/photo/2016/08/26/15/54/checklist-1622517_960_720.png");
+    width: 280px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.adminDashboard form button{
+    font-size: 25px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+
+.adminDashboard form textarea{
+    height: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.AdminPosts{
+    color: black;
+    padding: 20px 5px;
+}
+
+
+.jobPost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.jobPost .headingSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.jobPost .headingSection h3{
+    font-size: 1.5em;
+}
+.jobPost .headingSection button{
+    padding: 5px 20px;
+    background-color: rgba(128, 128, 128, 0.296);
+    margin: 5px 0;
+    border-radius: 5px;
+
+}
+
+.jobPost h5,.jobPost h4{
+    margin: 5px 0;
+}
+.jobPost .jobValuesSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.jobValuesSection button{
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: aqua;
+    margin: 10px 0;
+}

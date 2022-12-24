@@ -1,0 +1,82 @@
+.LoginPageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 95vh; */
+    flex-direction: column;
+}
+
+
+.LoginPageContainer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.LoginPageContainer section div{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.LoginPageContainer section div:hover{
+    transform: scale(1.2);
+}
+
+.LoginPageContainer form{
+    width:400px;
+    min-height: 400px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #192a56;
+    margin: 5px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+#adminLogin form{
+    background-color: #218c74;
+}
+.LoginPageContainer form h1{
+    margin: 20px;
+}
+.LoginPageContainer form input{
+    color: black;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.LoginPageContainer form input:focus{
+    border: 1px solid yellowgreen;
+}
+.LoginPageContainer form button{
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    background-color: coral;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .LoginPageContainer form{
+        width: 300px;
+    }
+    .LoginPageContainer form input{
+        width: 280px;
+    }
+}
+#userLogin,#adminLogin,#user_form_2,#admin_form_2{
+    display: none;
+}

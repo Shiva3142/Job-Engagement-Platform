@@ -1,0 +1,62 @@
+.JobPageContainer{
+}
+
+
+.JobsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.JobsContainer .filters{
+    min-width: 200px;
+    max-width: 400px;
+    background: white;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    color: black;
+}
+
+
+.jobPosts{
+    color: black;
+    min-width: 700px;
+    padding: 20px 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .jobPosts{
+        min-width: 200px;
+    }
+}
+
+.filters .options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.filters .option{
+    border: 1px solid gray;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.filters input{
+    width: 100%;
+    padding: 5px;
+    border-bottom: 2px solid gray;
+    margin: 10px 0;
+}
+
+.filters >button{
+    padding: 5px 30px;
+    background-color: aqua;
+    margin: 20px 0;
+    float: right;
+}

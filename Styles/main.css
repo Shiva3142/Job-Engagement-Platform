@@ -15,6 +15,29 @@ header a button{
     border-radius: 5px;
 }
 
+.headerLoginOptions{
+    position: relative;
+    text-decoration: underline;
+}
+.headerLoginOptions #headerLoginOptions{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    padding: 2px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#headerLoginOptions a{
+    border: 1px solid white;
+    display: block;
+    width: 100%;
+    padding: 2px;
+}
+#headerLoginOptions a:hover{
+    background-color: royalblue;
+}
+
 @media screen and (max-width: 768px) {
     header{
         justify-content: space-between;
@@ -36,4 +59,46 @@ footer{
 }
 footer h3{
     text-align: center;
+}
+
+#notifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 5px 10px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+}
+@media screen and (max-width: 768px) {
+#notifications{
+    font-size: 0.9em;
+}
+}
+#notifications div{
+    width: 90%;
+}
+
+#notifications i{
+    margin: 5px 20px;
+}
+
+
+
+.NotFoundContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30vh;
+    color: blue;
+    background-color: white;
+    text-align: center;
+}
+
+.NotFoundContainer h1{
+    text-shadow: 5px 5px 5px green;
 }

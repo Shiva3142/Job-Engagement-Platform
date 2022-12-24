@@ -9,15 +9,12 @@ include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/Header.php");
 
 if (isset($_SESSION['Id']) && isset($_SESSION['Username'])) {
     if ($_SESSION['isAdmin']) {
-        include($_SERVER["DOCUMENT_ROOT"] . "/Components/Home/Admin_Dashboard.php");
+        include($_SERVER["DOCUMENT_ROOT"] . "/Components/Account/Recruiters_Account.php");
     } else {
-        include($_SERVER["DOCUMENT_ROOT"] . "/Components/Home/User_Dashboard.php");
+        include($_SERVER["DOCUMENT_ROOT"] . "/Components/Account/User_Account.php");
     }
-}else{
-    header("location:/");
 }
 ?>
-
 <?php
 include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/defaults/end.php");
 ?>

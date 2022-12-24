@@ -1,0 +1,22 @@
+.userDashboard article {
+	background: url("https://images.unsplash.com/photo-1617565085015-13cb9d366120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	min-height: 60vh;
+	background-position: center;
+    background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    color: black;
+}
+.userDashboard article h1 {
+	color: blue;
+    text-align: center;
+	font-size: 3em;
+}
+@media screen and (max-width: 768px) {
+	.userDashboard article {
+		min-height: 40vh;
+        font-size: 0.5em;
+	}
+}

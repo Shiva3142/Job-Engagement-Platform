@@ -9,23 +9,68 @@
     border: none;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     text-decoration: none;
-    color: white;
+    color: inherit;
     font-family: 'Nerko One', cursive;
+    word-wrap: break-word;
 
 }
 
 body{
-    background-color: aqua;
-    background: url("https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80") no-repeat fixed;
+    background: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
+    color: white;
 }
 @media screen and (max-width: 768px) {
     body{
-        background: url("https://images.pexels.com/photos/3746957/pexels-photo-3746957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")no-repeat fixed;
+        /* background: url("https://images.pexels.com/photos/3746957/pexels-photo-3746957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")no-repeat fixed; */
     }
 }
 
-a,button,span,img{
+a,button,span,img,i,svg,label{
     cursor: pointer;
+}
+
+input::placeholder{
+    color: inherit;
+    opacity: 0.5;
+}
+
+.color-red{
+    color: red;
+    margin: 0 5px ;
+}
+.color-gray{
+    color: gray;
+    margin: 0 5px ;
+}
+.color-blue{
+    color: blue;
+    margin: 0 5px ;
+}
+.color-green{
+    color: green;
+    margin: 0 5px ;
+}
+
+.light-text{
+    font-weight: lighter;
+}
+
+i{
+    color: inherit;
+    text-decoration: inherit;
+    font-style: inherit;
+}
+
+
+p{
+    font-weight: 100;
+}
+
+.centered-main-heading{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 5px 5px blue;
 }
