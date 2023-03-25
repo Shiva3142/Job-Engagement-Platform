@@ -8,8 +8,18 @@
     </nav>
     <?php
     if (isset($_SESSION['Id']) && isset($_SESSION['Username'])) {
+        if ($_SESSION['isAdmin']==true) {
+            echo'
+            <button>Recruiter Account</button>
+            ';
+        }else{
+            echo'
+            <button>Job Seeker Account</button>
+            ';
+        }
         echo '
         <div class="headerLoginOptions" onclick="toggleHeaderLoginOptions()">
+
             <span>Hello
                 ' . $_SESSION['Username'] . '
             </span>

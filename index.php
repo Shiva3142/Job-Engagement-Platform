@@ -63,7 +63,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/Config/DB_connect.php");
                     }
 
                     echo '<h4> <i class="fas fa-globe-asia"></i> ' . $row['place'] . '</h4>
-                <button><a href="/Components/Jobs/Job_Description.php?job_id=' . $row['job_id'] . '">Manage This Job</a></button>
+                <button><a href="/Components/Jobs/Job_Description.php?job_id=' . $row['job_id'] . '">View This Job</a></button>
             </div>
         </div>            
             ';

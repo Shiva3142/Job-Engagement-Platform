@@ -14,7 +14,11 @@ header a button{
     padding: 7px 20px;
     border-radius: 5px;
 }
-
+header >button{
+    color: red;
+    background: aqua;
+    padding: 2px 10px;
+}
 .headerLoginOptions{
     position: relative;
     text-decoration: underline;

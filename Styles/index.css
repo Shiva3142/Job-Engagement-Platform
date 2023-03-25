@@ -10,7 +10,7 @@
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     text-decoration: none;
     color: inherit;
-    font-family: 'Nerko One', cursive;
+    /* font-family: 'Nerko One', cursive; */
     word-wrap: break-word;
 
 }
@@ -54,8 +54,13 @@ input::placeholder{
     margin: 0 5px ;
 }
 
+
+
 .light-text{
     font-weight: lighter;
+}
+.text-align-center{
+    text-align: center;
 }
 
 i{

@@ -60,3 +60,149 @@
     margin: 20px 0;
     float: right;
 }
+
+
+
+.jobDescriptionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.jobDetails{
+    min-width: 70%;
+    max-width: 90%;
+    min-height: 70vh;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border:1px solid gray;
+}
+
+
+.jobDetails ul{
+    margin: 30px;
+    font-size: 25px;
+}
+.jobDetails ul li{
+    margin-left: 25px;
+    font-size: 0.8em;
+}
+.jobDetails .details{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.jobValuesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+.jobValuesContainer .value{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    margin: 5px 20px;
+}
+
+
+.jobDetails .apply_button{
+    color: white;
+    background: aqua;
+    padding: 5px 50px;
+    margin: auto;
+    float: right;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px green;
+}
+
+.jobDetails >button{
+    color: white;
+    background: gray;
+    padding: 5px 30px;
+    margin: 10px;
+    float: right;
+    font-size: 30px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    .jobDetails >button{
+        font-size: 0.7em;
+    }
+}
+
+.applicationForm{
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.applicationForm form{
+    border:1px solid gray;
+    min-width: 40vw;
+    max-width: 90vw;
+    min-height: 70vh;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+}
+
+.applicationForm form h1{
+    margin: 20px 0px;
+}
+.applicationForm form input{
+    display: none;
+}
+
+.applicationForm form label{
+    height: 100px;
+    border: 5px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+.applicationForm form button{
+    font-size: 30px;
+    background-color: blue;
+    padding: 5px 50px;
+    color: white;
+}
+
+
+.resume{
+    width: 100%;
+    min-height: 100px;
+    border: 5px dotted blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+
+.applicantDetails embed{
+    max-height: 70vh;
+    border: 2px solid black;
+    max-width: 95%;
+}
