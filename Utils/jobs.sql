@@ -1,0 +1,23 @@
+CREATE TABLE `jobs` (
+    `job_id` varchar(256) NOT NULL,
+    `position_name` text,
+    `company_name` text,
+    `place` text,
+    `number_of_positions` int DEFAULT NULL,
+    `job_level` varchar(45) DEFAULT NULL,
+    `skills_required` text,
+    `responsibilities` text,
+    `eligibilities` text,
+    `number_of_applicants` int DEFAULT '0',
+    `benefits` text,
+    `package` int DEFAULT NULL,
+    `monthly_pay` int DEFAULT NULL,
+    `admin_Id` varchar(256) DEFAULT NULL,
+    `time_range` varchar(45) DEFAULT NULL,
+    `posting_date` datetime DEFAULT CURRENT_TIMESTAMP,
+    `last_date_to_apply` varchar(45) DEFAULT NULL,
+    `type` varchar(45) DEFAULT NULL,
+    `is_active` int DEFAULT '1',
+    PRIMARY KEY (`job_id`),
+    UNIQUE KEY `job_id_UNIQUE` (`job_id`)
+)
