@@ -3,11 +3,10 @@ session_start();
 include($_SERVER["DOCUMENT_ROOT"] . "/Config/DB_connect.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $name = $_POST['name'];
-    $email = $_POST['email'];
+    $email = strtolower($_POST['email']);
     $phone = $_POST['phone'];
     $password = $_POST['password'];
     $phone = substr($phone, strlen($phone) - 10, 10);
-
     $search_sql = "SELECT * FROM job_seekers WHERE email='$email' OR number='$phone';";
     $result = mysqli_query($conn, $search_sql);
     if ($result) {

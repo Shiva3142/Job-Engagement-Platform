@@ -3,7 +3,7 @@ session_start();
 include($_SERVER["DOCUMENT_ROOT"] . "/Config/DB_connect.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $name = $_POST['name'];
-    $email = $_POST['email'];
+    $email = strtolower($_POST['email']);
     $phone = $_POST['phone'];
     $password = $_POST['password'];
     $company = $_POST['company'];
@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $_SESSION['Username'] = explode(" ", $name)[0];
                 $_SESSION['Id'] = $id;
                 $_SESSION['isAdmin'] = true;
+                $_SESSION['Company']=$company;
                 header("location:/Components/Home");
             } else {
                 $_SESSION['isError'] = true;

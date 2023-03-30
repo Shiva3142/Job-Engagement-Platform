@@ -1,9 +1,9 @@
-<main>
-    <?php
+<?php
     include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/defaults/start.php");
     include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/Header.php");
-
-
+    ?>
+<main>
+<?php
     if (isset($_GET['application_id']) && isset($_SESSION['Id']) && isset($_SESSION['Username'])) {
     } else {
         header("location:/");
@@ -49,7 +49,6 @@
             <h5><span class="light-text"><i class="far fa-hourglass"></i>  Duration:</span> ' . $row['time_range'] . '</h5>      </div>';
             }
             echo '
-       
         </div>
         <div class="jobValuesContainer">
         <div class="value" style="background:#00800022"> Posted on: ' . $row['posting_date'] . '
@@ -135,13 +134,7 @@
 
 
                 echo '
-                <button style="background:blue;">
                 
-                
-                Start Chat
-                
-                
-                </button>
                 <button style="background:green;">
                 
                 <a href="/Components/Jobs/Hire.php?application_id='.$_GET['application_id'].'">

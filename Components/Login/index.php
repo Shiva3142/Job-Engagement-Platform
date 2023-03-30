@@ -1,9 +1,9 @@
 <?php
+include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/defaults/start.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/Header.php");
 if (isset($_SESSION['Id']) && isset($_SESSION['Username'])) {
     header("location:/");
 }
-include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/defaults/start.php");
-include($_SERVER["DOCUMENT_ROOT"] . "/Components/Templates/Header.php");
 
 
 if (isset($_SESSION['isError']) && isset($_SESSION['ErrorMessage']) && isset($_SESSION['ErrorIsFor'])) {
